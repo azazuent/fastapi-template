@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 
-from src.api.v1.routers import hello_world_router
+from .routers import hello_world_router
 
-_root_path = "/api/v1"
+_root_path = "/api"
 
 app = FastAPI(
     version="1.0.0",
